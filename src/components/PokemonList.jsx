@@ -81,7 +81,7 @@ export default function PokemonList() {
       {isLoading && <div>Carregando...</div>}
       {!isLoading && pokemons.map((pokemon) => (<PokemonCard key={pokemon.name} pokemon={pokemon} /> )) }
       <div className='btnOperation'>
-        <button className='btnDouble' onClick={() => previousPage()}>Anterior</button><button classname = 'btnDouble' onClick={() => nextPage()}>Próxima</button>
+        <button onClick={() => previousPage()}>Anterior</button><button onClick={() => nextPage()}>Próxima</button>
       </div>
     </>
   );

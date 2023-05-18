@@ -40,8 +40,11 @@
   font-family: monospace;
 }
 
-.btnDouble {
+.btnOperation > button {
+  background-color:cornsilk;
   margin: 10px;
+  border-width: 1.2px;
+  border-color: black;
 }
 
 
