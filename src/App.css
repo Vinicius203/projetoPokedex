@@ -22,6 +22,7 @@
 }
 
 .divSon {
+  background-color: white;
   flex-basis: 33.33333%;
   font-family: monospace;
   margin-bottom: 5px;
