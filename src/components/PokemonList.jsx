@@ -3,6 +3,7 @@
 // Importamos as dependências necessárias
 import React, { useState, useEffect } from 'react';
 import PokemonCard from './PokemonCard';
+import { Card, CardContent} from '@mui/material';
 
 // Agora, vamos criar o componente PokemonList
 // Este componente irá buscar dados da PokeAPI e exibir uma lista de PokemonCards
