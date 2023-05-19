@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 // Primeiro, vamos criar o componente PokemonCard
 // Este componente recebe um pokemon como prop e exibe o nome e a imagem do pokemon
-export default function PokemonCard({ pokemon }) {
+export default function PokemonCard({ pokemon, funcao, modal}) {
 
   const capitalizeFirstLowercaseRest = str => {
     return (
@@ -21,6 +21,8 @@ export default function PokemonCard({ pokemon }) {
       <div className = 'orgTypes'>
         {pokemon.types.map((item) => (<h3>{capitalizeFirstLowercaseRest(item.type.name)}</h3>))}
       </div>
+      <button onClick={() => modal()}>More Info</button>
+      <button onClick={() => funcao()}>More Info</button>
     </div>
   );
 }
